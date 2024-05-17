@@ -1,0 +1,139 @@
+<!-- <nav class="navbar bg-light"> -->
+<nav class="navbar bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img style="border-radius: 10px;" src="http://unblast.com/wp-content/uploads/2018/08/Credit-Card-Icons.jpg"
+        alt="Logo" width="280" height="180">
+    </a>
+    <div class="col-md-4">
+      <h1 style="color: white;">Card Management</h1>
+    </div>
+    <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" width="115" height="100">
+  </div>
+</nav>
+
+<div class="col-md-12 p-2">
+  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+      class="fa fa-save"></i> New Usuario</button>
+  <table class="table mt-2 table-bordered">
+    <thead class="table-primary">
+      <tr>
+        <th>COD_USUARIO</th>
+        <th>TIP_DOCUMENT</th>
+        <th>VAR_DOC_IDENTIDAD</th>
+        <th>VAR_APELLIDOS</th>
+        <th>VAR_NOMBRES</th>
+        <th>VAR_PASSWORD</th>
+        <th>VAR_NUM_TELEFONO</th>
+        <th>INT_FLG_ELIMINADO</th>
+        <th>FEC_REGISTRO</th>
+        <th>FEC_MODIFICACION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>DNI</td>
+        <td>999999999</td>
+        <td>CARRANZA TOLEDO</td>
+        <td>JHON WITCH</td>
+        <td>*****</td>
+        <td>123456789</td>
+        <td>1</td>
+        <td>2024-05-06</td>
+        <td>2024-05-06</td>
+
+        <td>
+          <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa fa-pencil"></i>
+          </button>
+          &nbsp;
+          <button type="button" class="btn btn-danger btn-sm">
+            <i class="fa fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TODO: Modals -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">New Usuario</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">COD_USUARIO</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">TIP_DOCUMENT</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">VAR_DOC_IDENTIDAD</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">VAR_APELLIDOS</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">VAR_NOMBRES</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">VAR_PASSWORD</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">VAR_NUM_TELEFONO</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">INT_FLG_ELIMINADO</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">FEC_REGISTRO</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-4 col-form-label">FEC_MODIFICACION</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success btn-sm">Save</button>
+        <button type="button" class="btn btn-warning btn-sm">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
